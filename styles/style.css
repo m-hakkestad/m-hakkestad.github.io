@@ -5,6 +5,7 @@ body{
     font-family: sans-serif;
 }
 
+/*Header*/
 .navbar{
     list-style-type: none;
     margin: 0;
@@ -35,4 +36,12 @@ body{
 .active {
     background-color:#AA2D00;
     color: white;
+}
+
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
