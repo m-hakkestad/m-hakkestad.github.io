@@ -1,21 +1,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/kalender.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <style media="screen">
-        .kalender{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        @media only screen and (max-width: 850px) {
-            .kalender {
-                flex-direction: column !important;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -52,40 +42,10 @@
 
         <main>
             <div class="kalender">
-                <iframe src="https://calendar.google.com/calendar/embed?src=rikssmask%40gmail.com&ctz=Europe%2FStockholm" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                <!--webmaster@rikssmask.se-->
-                <form class="kalender-form" action="mailto:mrhakkenspeten@gmail.com" method="post" enctype="text/plain" accept-charset="UTF-8">
-                    <h3>Vill du lägga till ett evemang fyll i formuläret nedan och skicka mailet</h3>
-                    <label for="">Ditt namn:</label><br>
-                    <input type="text" name="name"><br>
+                <iframe src="https://calendar.google.com/calendar/b/4/embed?title=Riks-SMASK&amp;showPrint=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=rikssmask%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FStockholm" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-                    <label for="forening">Din förening:</label><br>
-                    <input type="text" name="forening"><br>
 
-                    <label for="mail">Din e-mail:</label><br>
-                    <input type="text" name="mail"><br>
 
-                    <label for="mail">Namn på evemang:</label><br>
-                    <input type="text" name="mail"><br>
-
-                    <label for="time">Tid:</label><br />
-                    <input type="checkbox" id="start-tid" name="start-tid">
-                    <label for="start-tid">Start tid</label>
-                    <input type="time" id="start-value" name="start-tid"><br>
-                    <input type="checkbox" id="hela-dagen" name="hela-dagen">
-                    <label for="hela-dagen">Hela dagen</label><br>
-
-                    <label for="start-date">Start datum:</label><br>
-                    <input type="date" name="start-date" size="50"><br>
-
-                    <label for="end-date">Slut datum:</label><br>
-                    <input type="date" name="end-date" size="50"><br><br>
-
-                    <label for="comment">Fritext:</label><br>
-                    <input type="text" name="comment" size="50"><br><br>
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Reset">
-                </form>
             </div>
         </main>
         <!--End of Body-->
@@ -95,21 +55,7 @@
     <!--Script for sticky header, add on all pages-->
     <script src="scripts/scripts.js"></script>
 
-    <!--Script for form-->
-    <script>
-        var startCheck = document.querySelector('input[id="start-tid"]');
-        var startText = document.querySelector('input[id="start-value"]');
-        startText.style.visibility = 'hidden';
-
-        startCheck.onchange = function() {
-          if(startCheck.checked) {
-            startText.style.visibility = 'visible';
-            startText.value = '';
-          } else {
-            startText.style.visibility = 'hidden';
-          }
-        };
-    </script>
+    
 </body>
 
 </html>
