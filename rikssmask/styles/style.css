@@ -9,8 +9,6 @@
     title font
 
 */
-
-
 body{
     background: #ffe15e;
     font-family: 'Lora', serif;
@@ -24,12 +22,4 @@ body{
   left:0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Main */
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
