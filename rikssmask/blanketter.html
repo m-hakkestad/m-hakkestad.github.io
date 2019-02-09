@@ -10,53 +10,42 @@
 <body>
     <div class="body">
         <!--Header-->
-        <header>
-        <span class="header-top">
-            <img class="header-img" src="images/wholeHeader.png" />
-        </span>
-        <span id="header-bottom">
+        <header id="header">
             <!--Menu-->
-            <nav>
-                <ul class="navbar">
-                    <li class="navbar_item">
-                        <a href="index.html"  class="navbar_item_link">Hem</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="blanketter.html" class="active" class="navbar_item_link">Blanketter</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="kalender.html" class="navbar_item_link">Kalender</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="kontakt.html" class="navbar_item_link">Kontakt</a>
-                    </li>
-                </ul>
+            <nav class="navbar">
+                <img class="logo" src="images/tutputtar_färg_tbg.png" />
+                <a href="index.html" class="logo-text">Riks-SMASK</a>
+                <a href="blanketter.html">Blanketter</a>
+                <a href="kalender.html">Kalender</a>
+                <a href="kontakt.html">Kontakt</a>
             </nav>
             <!--End of Menu-->
-        </span>
         </header>
         <!--End of Header-->
 
         <!--Body-->
         <main>
-            <h1>Blanketter</h1>
-            <ul class="blanketter">
-                <li class="blanketter_item">
-                    <a href="files/blankett/Reseersättning info+blankett.pdf" class="blanketter_item_link">Blankett för Reseersättning med info</a>
-                </li>
-                <li class="blanketter_item">
-                    <a href="files/blankett/RS_Eventsersattningsblankett_v2.pdf"class="blanketter_item_link">Blankett för eventersättning (PDF)</a>
-                </li>
-                <li class="blanketter_item">
-                    <a href="files/blankett/RS_Eventsersattningsblankett_v2.xlsx"class="blanketter_item_link">Blankett för eventersättning (excel)</a>
-                </li>
-            </ul>
+            <section class="content">
+                <h1>Blanketter</h1>
+                <ul class="blanketter">
+                    <li class="blanketter_item">
+                        <a href="files/blankett/Reseersättning info+blankett.pdf" class="blanketter_item_link">Blankett för Reseersättning med info</a>
+                    </li>
+                    <li class="blanketter_item">
+                        <a href="files/blankett/RS_Eventsersattningsblankett_v2.pdf"class="blanketter_item_link">Blankett för eventersättning (PDF)</a>
+                    </li>
+                    <li class="blanketter_item">
+                        <a href="files/blankett/RS_Eventsersattningsblankett_v2.xlsx"class="blanketter_item_link">Blankett för eventersättning (excel)</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="calendar">
+                <iframe src="https://calendar.google.com/calendar/b/4/embed?title=Riks-SMASK&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=rikssmask%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FStockholm" style="border-width:0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+            </section>
         </main>
         <!--End of Body-->
 
     </div>
-    <!--Script for sticky header, add to all pages-->
-    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
