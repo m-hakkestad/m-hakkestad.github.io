@@ -4,26 +4,42 @@
     medium-orange: #ff9100;
     dark-orange: #f25c08;
     red: #f22f08;
+    nicer-red:#ec5739;
     black: #000000;
 
     title font
 
 */
 body{
-    background: #ffe15e;
+    background: #ec5739;
     font-family: sans-serif;
 }
 
 .body{
   width:100%;
-  height:100%;  // the desired height
-  position:absolute;
-  top:0;
-  left:0;
+  height:100%;
   display: flex;
   flex-direction: column;
 }
 
 main{
     margin: 0 auto;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content{
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.calendar{
+    padding: 1rem;
+    background-color: #ffe15e;
+    height: 600px;
+
 }

@@ -10,36 +10,22 @@
 <body>
     <div class="body">
         <!--Header-->
-        <header>
-        <span class="header-top">
-            <img class="header-img" src="images/wholeHeader.png" />
-        </span>
-        <span id="header-bottom">
+        <header id="header">
             <!--Menu-->
-            <nav>
-                <ul class="navbar">
-                    <li class="navbar_item">
-                        <a href="index.html" class="navbar_item_link">Hem</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="blanketter.html" class="navbar_item_link">Blanketter</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="kalender.html" class="navbar_item_link">Kalender</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="kontakt.html" class="active" class="navbar_item_link">Kontakt</a>
-                    </li>
-                </ul>
+            <nav class="navbar">
+                <img class="logo" src="images/tutputtar_färg_tbg.png" />
+                <a href="index.html" class="logo-text">Riks-SMASK</a>
+                <a href="blanketter.html">Blanketter</a>
+                <a href="kalender.html">Kalender</a>
+                <a href="kontakt.html">Kontakt</a>
             </nav>
             <!--End of Menu-->
-        </span>
         </header>
         <!--End of Header-->
 
         <!--Body-->
         <main>
-            <div class="kontakt">
+            <section class="content">
                 <form class="form" action="mailto:mrhakkenspeten@gmail.com" method="post" enctype="text/plain" accept-charset="UTF-8">
                     <h3 class="form-header">Fyll i formuläret för att lägga till ett evemang.<br />
                         Glöm inte att skicka mailet!
@@ -76,13 +62,14 @@
                         <input type="reset" value="Reset">
                     </div>
                 </form>
-            </div>
+            </section>
+            <section class="calendar">
+                <iframe src="https://calendar.google.com/calendar/b/4/embed?title=Riks-SMASK&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=rikssmask%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FStockholm" style="border-width:0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+            </section>
         </main>
         <!--End of Body-->
 
     </div>
-    <!--Script for sticky header, add on all pages-->
-    <script src="scripts/scripts.js"></script>
 
     <!--Script for form-->
     <script>

@@ -1,0 +1,13 @@
+<!--Header-->
+<header id="header">
+    <!--Menu-->
+    <nav class="navbar">
+        <img class="logo" src="images/tutputtar_färg_tbg.png" />
+        <a href="index.html" class="logo-text">Riks-SMASK</a>
+        <a href="blanketter.html">Blanketter</a>
+        <a href="kalender.html">Kalender</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <!--End of Menu-->
+</header>
+<!--End of Header-->
