@@ -25,6 +25,7 @@ font-family: sans-serif;
 }
 
 main{
+    width: 100%;
     margin: 0 auto;
     padding-top: 6rem;
     display: flex;
@@ -32,15 +33,75 @@ main{
     justify-content: space-between;
 }
 
-.content{
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+@media only screen and (max-width: 850px) {
+    main {
+        flex-direction: column !important;
+    }
 }
 
+
+.content{
+    width: 60%;
+    margin-right: 2rem;
+}
+
+.content-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-column-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    height: 60%;
+}
+
+.content-column-item::after {
+  content: "";
+  background: url(../images/contentPlaceholder.jpg);
+  background-size:contain;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position:absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.title{
+    width: 150%;
+}
+
+.text{
+    vertical-align: middle;
+    height: 100%;
+}
+
+.content-title{
+    font-size: 3rem;
+}
+
+.content-subtitle{
+    font-size: 2rem;
+}
+
+.content-text{
+    font-size: 2rem;
+}
+
+
+
+
 .calendar{
-    padding: 1rem;
+    width: auto;
+    padding: 2.5rem;
     background-color: #ffe15e;
     height: 600px;
 
