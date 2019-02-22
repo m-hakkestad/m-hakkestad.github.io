@@ -11,8 +11,10 @@
 
 */
 body{
-    background: #ec5739;
-    font-family: sans-serif;
+    /*background: #f22f08;*/
+    background-image: linear-gradient(to right, #f22f08, #f23d06, #f24906, #f25306, #f25c08);
+
+font-family: sans-serif;
 }
 
 .body{
