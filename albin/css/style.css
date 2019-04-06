@@ -4,7 +4,8 @@ html {
 body {
   /* Disable horizontal scrollbar */
   overflow-x: hidden;
-  background-color: #ec764e; /* light red */
+  /*background-color: #ec764e; /* light red */
+  background-color: #ffdd4a; /* yellow */
 }
 
 
