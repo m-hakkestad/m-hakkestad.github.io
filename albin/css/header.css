@@ -1,15 +1,63 @@
-a {
-  font-size: 2em;
+a.header {
+  font-size: 1em;
   color: black;
-  margin: 0.5em;
+  margin-top: 1em;
+  font-weight: bold;
 }
 
-nav {
-  background-color: #ffdd4a;
+
+/*========== LOGOTYPE CSS ==========*/
+#logoContainer {
+  margin-top: 1em;
 }
+#logoTextContainer {
+  float: left;
+}
+#logo{
+    width: auto;
+    height: 5rem;
+    float: left;
+}
+#logo:hover {
+  cursor: pointer;
+}
+.navbar-brand {
+  color: black;
+  font-family: 'Lora';
+  font-size: 2em;
+  margin: 0;
+}
+.navbar-brand:hover {
+  color: black;
+}
+/*==================================*/
+
+
+/*========== NAVBAR COLORS =========*/
+nav {
+  background-color: #ffdd4a; /* yellow */
+}
+ul.dropdown-menu {
+  background-color: #ffdd4a; /* yellow */
+}
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: #ffbf00; /* darker yellow */
+}
+ul.dropdown-menu > li > a:hover, ul.dropdown-menu > li > a:focus  {
+  background-color: #ffbf00; /* darker yellow */
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #ffbf00; /* darker yellow */
+}
+a.header:hover {
+  color: black;
+}
+/*==================================*/
+
 
 /*==== HAMBURGER MENU ANIMATIONS ===*/
 .hamburger {
+  visibility: hidden;
   display: inline-block;
   cursor: pointer;
   position: absolute;

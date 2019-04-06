@@ -1,29 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
 <link rel="stylesheet" type="text/css" href="css/header.css"/>
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"/>
 
 
-<!--Header-->
-<header id="header">
-    <!--Menu-->
-    <nav class="navbar navbar-default">
-        <img class="logo" src="images/tutputtar_color_tbg.png"/>
-        <a href="index.html" class="logo-text">Riks-SMASK</a>
-        <a href="blanketter.html">Blanketter</a>
-        <a href="kalender.html">Kalender</a>
-        <a href="kontakt.html">Kontakt</a>
-        <div class="hamburger" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+<nav class="">
+  <div class="container-fluid">
+
+    <!-- Navbar logo and header -->
+    <div class="navbar navbar-header">
+      <!-- Hamburger menu -->
+      <div class="hamburger navbar-toggle" onclick="myFunction(this)" data-toggle="collapse" data-target="#headerNavBar">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <!-- ============= -->
+
+      <!-- Riks-SMASK logo -->
+      <div id="logoContainer">
+        <img id="logo" src="images/tutputtar_color_tbg.png"/>
+        <div id="logoTextContainer">
+          <a class="navbar-brand" href="index.html">Riks-SMASK</a>
         </div>
-    </nav>
-    <!--End of Menu-->
+      </div>
+      <!-- ============= -->
+    </div>
 
+    <!-- Navbar menu items -->
+    <div class="collapse navbar-collapse" id="headerNavBar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a class="header" href="index.html">Hem</a></li>
 
-</header>
-<!--End of Header-->
+        <li class="dropdown">
+          <a class="dropdown-toggle header" data-toggle="dropdown" href="#">Förening<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="header" href="#">Stadgar</a></li>
+            <li><a class="header" href="#">Uppdrag/Historik</a></li>
+            <li><a class="header" href="#">Styrelsen</a></li>
+            <li><a class="header" href="#">Ersättning</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle header" data-toggle="dropdown" href="#">Medlemmar<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="header" href="karta.html">Karta</a></li>
+            <li><a class="header" href="#">Uppdelning i distrikt</a></li>
+            <li><a class="header" href="#">Bli medlem</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle header" data-toggle="dropdown" href="#">Arkiv<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="header" href="protokoll.html">Protokoll</a></li>
+          </ul>
+        </li>
+
+        <li><a class="header" href="sofstork.html">SOF/STORK</a></li>
+
+        <li><a class="header" href="#">Kontakt</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
 <script>
+// Toggle hamburger menu between its two states (open/closed).
 function myFunction(x) {
   x.classList.toggle("change");
 }
+
+// Hide/show the hamburger menu when page is resized.
+$(window).resize(function() {
+  if ($(window).width() > 750) {
+    $(".hamburger").css("visibility", "hidden");
+  } else {
+    $(".hamburger").css("visibility", "visible");
+  }
+});
+
+$(document).ready(function() {
+  // Hide/show the hamburger menu when page has loaded.
+  if ($(window).width() > 750) {
+    $(".hamburger").css("visibility", "hidden");
+  } else {
+    $(".hamburger").css("visibility", "visible");
+  }
+  // Make the logo lead back to home when clicked.
+  $("#logo").on("click", function() {
+    window.location.assign("index.html");
+  });
+
+
+});
 </script>
+
+</root>
