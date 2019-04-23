@@ -27,20 +27,27 @@
   <div class="pageContent">
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <h1>Protokoll</h1>
-        <p>Här finner du snart protokoll från diverse möten.</p>
+      <div class="col-sm-5">
 
-        <!-- -->
+          <h1>Blanketter för ersättningar</h1>
+          <ul class="blanketter">
+              <li class="blanketter_item">
+                  <a href="files/blankett/Reseersättning info+blankett.pdf" class="blanketter_item_link">Blankett för Reseersättning med info</a>
+              </li>
+              <li class="blanketter_item">
+                  <a href="files/blankett/RS_Eventsersattningsblankett_v2.pdf"class="blanketter_item_link">Blankett för eventersättning (PDF)</a>
+              </li>
+              <li class="blanketter_item">
+                  <a href="files/blankett/RS_Eventsersattningsblankett_v2.xlsx"class="blanketter_item_link">Blankett för eventersättning (excel)</a>
+              </li>
+          </ul>
 
-        <script language=JavaScript>
-          console.log("hej");
-          var fs = require("fs");
-          var files = fs.readdirSync("/images/");
-          console.log(files);
-        </script>
-
-
+      </div>
+      <div class="col-sm-5">
+        <div class="frame">
+          <span class="frame-header">Riks-SMASK's Kalender</span>
+          <iframe src="https://calendar.google.com/calendar/b/4/embed?title=Riks-SMASK&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=rikssmask%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FStockholm"></iframe>
+        </div>
       </div>
       <div class="col-sm-1"></div>
     </div>
