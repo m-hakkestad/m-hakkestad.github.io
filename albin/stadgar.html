@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <!-- BOOTSTRAP LINKS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- This div contains the page header in "header.html" -->
+  <div class="pageHeader"></div>
+
+  <!-- This div contains the content of this specific page -->
+  <div class="pageContent">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+          <h1>Stadgar</h1>
+          <p>
+              Här kommer stadgarna att stå snart!
+          </p>
+      </div>
+      <div class="col-sm-5">
+        <div class="frame">
+          <span class="frame-header">Riks-SMASK's Kalender</span>
+          <iframe src="https://calendar.google.com/calendar/b/4/embed?title=Riks-SMASK&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=rikssmask%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FStockholm"></iframe>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+
+  </div>
+
+  <!-- This div contains the page footer in "footer.html" -->
+  <div class="pageFooter"></div>
+
+</body>
+
+<!-- Script for loading in the page header and footer -->
+<script language=JavaScript>
+  $(document).ready(function() {
+    $(".pageHeader").load("header.html");
+    $(".pageFooter").load("footer.html");
+    $("body").css("background-color", "#ffdd4a");
+  });
+</script>
+
+</html>
