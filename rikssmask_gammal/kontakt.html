@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/kontakt.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+
+<body>
+    <div class="body">
+        <!--Header-->
+        <header id="header">
+            <!--Menu-->
+            <nav class="navbar">
+                <img class="logo" src="images/tutputtar_color_tbg.png" />
+                <a href="index.html" class="logo-text">Riks-SMASK</a>
+                <a href="blanketter.html">Blanketter</a>
+                <a href="kalender.html">Kalender</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+            <!--End of Menu-->
+        </header>
+        <!--End of Header-->
+
+        <!--Body-->
+        <main>
+            <section class="content">
+                <h1>Kontakt</h1>
+                <p>
+                    För kontakt och för att lägga till evenemang i kalender<br/>
+                    maila webmaster@rikssmask.se
+                </p>
+            </section>
+            <section class="calendar">
+                <iframe src="https://calendar.google.com/calendar/b/4/embed?title=Riks-SMASK&amp;showPrint=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=rikssmask%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FStockholm" style="border-width:0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+            </section>
+        </main>
+        <!--End of Body-->
+
+    </div>
+
+    <!--Script for form-->
+    <script>
+        var startCheck = document.querySelector('input[id="start-tid"]');
+        var startText = document.querySelector('input[id="start-value"]');
+        startText.style.visibility = 'hidden';
+
+        startCheck.onchange = function() {
+          if(startCheck.checked) {
+            startText.style.visibility = 'visible';
+            startText.value = '';
+          } else {
+            startText.style.visibility = 'hidden';
+          }
+        };
+    </script>
+</body>
+
+</html>
